@@ -1,0 +1,250 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+
+    <link href="css/menu.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        <!--aggiunge particolare css che serve solo x questa pagina-->
+    </asp:ContentPlaceHolder>
+
+
+
+</head>
+<body>
+    <form id="form1" runat="server">
+
+
+        <%-- <div id="container">
+
+            <div id="header">
+                <h1>AUTOBROVIA SRL</h1>
+                <img id="logo" src="/img/logo.jpg" />
+            </div>
+
+            <div id="menu">
+
+                <!-- spese -->
+                <h4>SPESE</h4>
+                <ul>
+
+                    <li>
+                        <a href="InserisciSpese.aspx">Inserisci</a>
+                    </li>
+                    <li>
+                        <a href="ModificaSpese.aspx">Modifica</a>
+                    </li>
+                    <li>
+                        <a href="EliminaSpese.aspx">Cancella</a>
+                    </li>
+
+                </ul>
+
+                <!-- tipi spese -->
+                <h4> TIPI SPESE</h4>
+                <ul>
+                    <li>
+                        <a href="InserisciTipiSpese.aspx">Inserisci</a>
+                    </li>
+                    <li>
+                        <a href="ModificaTipiSpese.aspx">Modifica</a>
+                    </li>
+                </ul>
+
+                <!-- parco auto-->
+                <h4> PARCO AUTO</h4>
+                <ul>
+                    <li>
+                        <a href="InserisciAuto.aspx">Inserisci</a>
+                    </li>
+                    <li>
+                        <a href="ModificaAuto.aspx">Modifica</a>
+                    </li>
+                </ul>
+
+                <!-- marche -->
+                <h4> MARCHE</h4>
+                <ul>
+                    <li>
+                        <a href="InserisciMarche.aspx">Inserisci</a>
+                    </li>
+                    <li>
+                        <a href="ModificaMarche.aspx">Modifica</a>
+                    </li>
+                </ul>
+
+                <!-- modelli-->
+                 <h4> MODELLI</h4>
+                <ul>
+                    <li>
+                        <a href="InserisciModelli.aspx">Inserisci</a>
+                    </li>
+                    <li>
+                        <a href="ModificaModelli.aspx">Modifica</a>
+                    </li>
+                </ul>
+
+                 <!-- clienti -->
+                 <h4>CLIENTI</h4>
+                <ul>
+                    <li>
+                        <a href="InserisciClienti.aspx">Inserisci</a>
+                    </li>
+                    <li>
+                        <a href="ModificaClienti.aspx">Modifica</a>
+                    </li>
+                </ul>
+
+                
+                <!-- contratti -->
+                <h4>CONTRATTI</h4>
+                <ul>
+
+                    <li>
+                        <a href="InserisciContratti.aspx">Inserisci</a>
+                    </li>
+                    <li>
+                        <a href="ModificaContratti.aspx">Modifica</a>
+                    </li>
+                    <li>
+                        <a href="EliminaContratti.aspx">Cancella</a>
+                    </li>
+
+                </ul>
+
+                <!-- contabilità -->
+                <h4>CONTABILITà</h4>
+                <ul>
+
+                    <li>
+                        <a href="InserisciSpese.aspx">Riepilogo costi</a>
+                    </li>
+                    <li>
+                        <a href="ModificaSpese.aspx">Riepilogo fatturato</a>
+                    </li>
+                    <li>
+                        <a href="EliminaSpese.aspx">Bilancio</a>
+                    </li>
+
+                </ul>
+
+
+
+
+
+
+            </div>
+
+            <div id="main">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+
+            <div id="footer">
+                AUTO BROVIA srl
+                <br />
+                via le Mani dagli Occhi, 46 MI
+                <br />
+                24100 BERGAMO (Bg)
+                CF/P.IVA 3UR438YDCJBXKJCDSUS
+            </div>
+
+        </div>--%>
+
+
+        <div id="container">
+
+
+            <div id="header">
+
+                <img id="logo" src="img/logo.png" />
+
+
+                <div id="menucontainer">
+
+                    <nav id="navMenu">
+                        <ul class="nav-menu nav-center">
+
+                            <li><a href="#" class="nav-active">spese</a>
+                                <ul>
+                                    <li><a href="InserisciSpese.aspx">inserisci</a></li>
+                                    <li><a href="ModificaSpese.aspx">modifica</a></li>
+                                    <li><a href="EliminaSpese.aspx">cancella</a></li>
+
+                                </ul>
+                            </li>
+                            <li><a href="#">tipi spese</a>
+                                <ul>
+                                    <li><a href="InserisciTipiSpese.aspx">inserisci</a></li>
+                                    <li><a href="ModificaTipiSpese.aspx">modifica</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="#">parco auto</a>
+                                <ul>
+                                    <li><a href="InserisciAuto.aspx">inserisci</a></li>
+                                    <li><a href="ModificaAuto.aspx">modifica</a></li>
+
+                                </ul>
+                            </li>
+                            <li><a href="#">marche</a>
+                                <ul>
+                                    <li><a href="InserisciMarche.aspx">Inserisci</a></li>
+                                    <li><a href="ModificaMarche.aspx">Modifica</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="#">modelli</a>
+                                <ul>
+                                    <li><a href="InserisciModelli.aspx">inserisci</a></li>
+                                    <li><a href="ModificaModelli.aspx">modifica</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="#">clienti</a>
+                                <ul>
+                                    <li><a href="InserisciClienti.aspx">inserisci</a></li>
+                                    <li><a href="ModificaClienti.aspx">modifica</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="#">contratti</a>
+                                <ul>
+                                    <li><a href="InserisciContratti.aspx">inserisci</a></li>
+                                    <li><a href="ModificaContratti.aspx">modifica</a></li>
+                                    <li><a href="#">cancella</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="Contabilità.aspx">Contabilità</a>
+                               
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+
+
+            <div id="main">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+
+            <div id="footer">
+                AUTO BROVIA srl
+                <br />
+                via le Mani dagli Occhi, 46 MI
+                <br />
+                24100 BERGAMO (Bg)
+                CF/P.IVA 3UR438YDCJBXKJCDSUS
+            </div>
+        </div>
+    </form>
+</body>
+</html>
